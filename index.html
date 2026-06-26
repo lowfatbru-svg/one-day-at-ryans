@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Night at Ryan's</title>
+<style>
+  :root {
+    --bg: #fafaf8;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e3e1dc;
+    --accent: #c44536;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header {
+    padding: 100px 0 60px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 480px;
+  }
+
+  .play-section {
+    padding: 48px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .play-btn {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 4px;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .play-btn:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .play-btn:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  section {
+    padding: 48px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  h2 {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .description p {
+    font-size: 17px;
+    color: var(--ink);
+    max-width: 560px;
+  }
+
+  .screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .screenshot-placeholder {
+    aspect-ratio: 16/9;
+    background: #efeee9;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .credits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .credit-item {
+    font-size: 15px;
+  }
+
+  .credit-role {
+    color: var(--muted);
+    font-size: 13px;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  footer {
+    padding: 40px 0 80px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    header { padding: 60px 0 40px; }
+    h1 { font-size: 38px; }
+    .screenshots { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">A game by friends</div>
+      <h1>One Night at Ryan's</h1>
+      <p class="tagline">A short, strange night you won't see coming. Made for laughs, built with Scratch.</p>
+    </header>
+
+    <div class="play-section">
+      <a href="game.html" class="play-btn">Play the game</a>
+      <span class="meta">Runs in your browser · no download</span>
+    </div>
+
+    <section class="description">
+      <h2>About</h2>
+      <p>Replace this with a couple sentences about what the game actually is — the setup, the goal, or the joke at the center of it. Keep it short; people read this for ten seconds before they hit play.</p>
+    </section>
+
+    <section>
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <div class="screenshot-placeholder">Screenshot 1</div>
+        <div class="screenshot-placeholder">Screenshot 2</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Credits</h2>
+      <div class="credits">
+        <div class="credit-item">
+          <span class="credit-role">Made by</span>
+          Name One
+        </div>
+        <div class="credit-item">
+          <span class="credit-role">Made by</span>
+          Name Two
+        </div>
+        <div class="credit-item">
+          <span class="credit-role">Made by</span>
+          Name Three
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      One Night at Ryan's — onenightatryans.com
+    </footer>
+  </div>
+
+</body>
+</html>
